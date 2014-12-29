@@ -20,6 +20,12 @@
 
     Tile *tile3 = [[Tile alloc]init];
     tile3.story = @"Story 3";
+    
+    //column one
+    NSMutableArray *firstColumn = [[NSMutableArray alloc] init];
+    [firstColumn addObject:tile1];
+    [firstColumn addObject:tile2];
+    [firstColumn addObject:tile3];
 
     Tile *tile4 = [[Tile alloc]init];
     tile4.story = @"Story 4";
