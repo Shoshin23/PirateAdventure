@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186D194B1A519BD900E3E40C /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D194A1A519BD900E3E40C /* Tile.m */; };
+		186D194E1A51A2D600E3E40C /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D194D1A51A2D600E3E40C /* Factory.m */; };
 		1897A9331A28D46D009B773B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897A9321A28D46D009B773B /* main.m */; };
 		1897A9361A28D46D009B773B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897A9351A28D46D009B773B /* AppDelegate.m */; };
 		1897A9391A28D46D009B773B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897A9381A28D46D009B773B /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186D19491A519BD800E3E40C /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		186D194A1A519BD900E3E40C /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		186D194C1A51A2D600E3E40C /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		186D194D1A51A2D600E3E40C /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		1897A92D1A28D46D009B773B /* Pirate Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1897A9311A28D46D009B773B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1897A9321A28D46D009B773B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186D19481A519BA700E3E40C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				186D194C1A51A2D600E3E40C /* Factory.h */,
+				186D194D1A51A2D600E3E40C /* Factory.m */,
+				186D19491A519BD800E3E40C /* Tile.h */,
+				186D194A1A519BD900E3E40C /* Tile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1897A9241A28D46D009B773B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 				1897A9351A28D46D009B773B /* AppDelegate.m */,
 				1897A9371A28D46D009B773B /* ViewController.h */,
 				1897A9381A28D46D009B773B /* ViewController.m */,
+				186D19481A519BA700E3E40C /* Model */,
 				1897A93A1A28D46E009B773B /* Main.storyboard */,
 				1897A93D1A28D46E009B773B /* Images.xcassets */,
 				1897A93F1A28D46E009B773B /* LaunchScreen.xib */,
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186D194E1A51A2D600E3E40C /* Factory.m in Sources */,
 				1897A9391A28D46D009B773B /* ViewController.m in Sources */,
 				1897A9361A28D46D009B773B /* AppDelegate.m in Sources */,
 				1897A9331A28D46D009B773B /* main.m in Sources */,
+				186D194B1A519BD900E3E40C /* Tile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +432,7 @@
 				1897A9521A28D46E009B773B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1897A9531A28D46E009B773B /* Build configuration list for PBXNativeTarget "Pirate AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				1897A9551A28D46E009B773B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
