@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Karthik Kannan. All rights reserved.
 //
 
+//the idea is to approach the game with a 4x3 co-ord system. How can we improve this? Think, my friend!
+
 #import "Factory.h"
 #import "Tile.h"
 
@@ -36,6 +38,12 @@
     Tile *tile6 = [[Tile alloc]init];
     tile6.story = @"Story 6";
 
+    NSMutableArray *secondColumn = [[NSMutableArray alloc] init];
+    [secondColumn addObject:tile4];
+    [secondColumn addObject:tile5];
+    [secondColumn addObject:tile6];
+
+    
     Tile *tile7 = [[Tile alloc]init];
     tile7.story = @"Story 7";
 
@@ -44,6 +52,12 @@
 
     Tile *tile9 = [[Tile alloc]init];
     tile9.story = @"Story 9";
+    
+    NSMutableArray *thirdColumn = [[NSMutableArray alloc] init];
+    [firstColumn addObject:tile7];
+    [firstColumn addObject:tile8];
+    [firstColumn addObject:tile9];
+
 
     Tile *tile10 = [[Tile alloc]init];
     tile10.story = @"Story 10";
@@ -53,6 +67,14 @@
 
     Tile *tile12 = [[Tile alloc]init];
     tile12.story = @"Story 12";
+    
+    NSMutableArray *fourthColumn = [[NSMutableArray alloc] init];
+    [fourthColumn addObject:tile10];
+    [fourthColumn addObject:tile11];
+    [fourthColumn addObject:tile12];
+
+    NSArray *tiles = [[NSArray alloc] initWithObjects:firstColumn,secondColumn,thirdColumn,fourthColumn, nil];
+    return tiles;
 
 
 }
