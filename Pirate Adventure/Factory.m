@@ -15,13 +15,13 @@
 
 -(NSArray *) tiles {
     Tile *tile1 = [[Tile alloc]init];
-    tile1.story = @"Story 1";
+    tile1.story = @"Captain we need fearless leaders like yourself to undertake this mission of grandiose accomplishment!";
     
     Tile *tile2 = [[Tile alloc]init];
-    tile2.story = @"Story 2";
+    tile2.story = @"Oops. That step was clearly a misstep, Sir. Let's move forward and change our strategy a bit, can we?";
 
     Tile *tile3 = [[Tile alloc]init];
-    tile3.story = @"Story 3";
+    tile3.story = @"A room full of gold and seductive virgins! We've reached the end of our journey and how quickly!...No?";
     
     //column one
     NSMutableArray *firstColumn = [[NSMutableArray alloc] init];
@@ -30,13 +30,13 @@
     [firstColumn addObject:tile3];
 
     Tile *tile4 = [[Tile alloc]init];
-    tile4.story = @"Story 4";
+    tile4.story = @"Wow. You really a round peg in a square hole. We've got to plan this coop as early as possible if you want to defeat the BossMan.";
 
     Tile *tile5 = [[Tile alloc]init];
-    tile5.story = @"Story 5";
+    tile5.story = @"We need to win the trust of Moran The Defector. We can then ally rebel forces. Your next steo will be very important.";
 
     Tile *tile6 = [[Tile alloc]init];
-    tile6.story = @"Story 6";
+    tile6.story = @"Feel the burn happening? That's Moran approaching you. With his rebel army! Quick! Run!";
 
     NSMutableArray *secondColumn = [[NSMutableArray alloc] init];
     [secondColumn addObject:tile4];
@@ -45,13 +45,13 @@
 
     
     Tile *tile7 = [[Tile alloc]init];
-    tile7.story = @"Story 7";
+    tile7.story = @"You've defeated Moran. This was not as easy as it sounded. This is more. ";
 
     Tile *tile8 = [[Tile alloc]init];
-    tile8.story = @"Story 8";
+    tile8.story = @"We need to seek the blessings of the Yohoha for the final battle.";
 
     Tile *tile9 = [[Tile alloc]init];
-    tile9.story = @"Story 9";
+    tile9.story = @"yohoha has blessed us. We need to head to the armory to finally prepare for the ultimate faceoff!";
     
     NSMutableArray *thirdColumn = [[NSMutableArray alloc] init];
     [firstColumn addObject:tile7];
@@ -60,13 +60,13 @@
 
 
     Tile *tile10 = [[Tile alloc]init];
-    tile10.story = @"Story 10";
+    tile10.story = @"You're in the castle. The BossMan is in his harem. Take the next step with all you've got. You wont be disappointed.";
 
     Tile *tile11 = [[Tile alloc]init];
-    tile11.story = @"Story 11";
+    tile11.story = @"You've killed Jabbar, the PointMan of the BossMan.";
 
     Tile *tile12 = [[Tile alloc]init];
-    tile12.story = @"Story 12";
+    tile12.story = @"You're in the final faceoff with the BossMan!";
     
     NSMutableArray *fourthColumn = [[NSMutableArray alloc] init];
     [fourthColumn addObject:tile10];
