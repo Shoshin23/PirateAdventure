@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Factory.h"
+#import "Tile.h"
 
 
 @interface ViewController ()
@@ -20,11 +21,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     Factory *factory = [[Factory alloc]init];
-    NSArray *returnOfFactory = [factory tiles];
+    self.tiles = [factory tiles];
     
-    NSLog(@"%@", returnOfFactory);
+    self.currentPoint = CGPointMake(0,0);
+    [self updateTile];
+    [self updateButtons];
     
 }
+
+-(void) updateTile {
+    Tile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    self.storyLabel.text = tileModel.story;
+    
+}
+
+-(void)updateButtons {
+    self.westButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x-1, self.currentPoint.y)];
+    self.eastButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x+1, self.currentPoint.y)];
+    self.northButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x, self.currentPoint.y+1)];
+    self.southButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x, self.currentPoint.y-1)];
+}
+
+-(BOOL) tileExistsAtPoint:(CGPoint)point{
+    
+    if(point.y >=0 && point.x >=0 && point.x < [self.tiles count] && point.y <[[self.tiles objectAtIndex:point.x] count]) {
+        return NO;
+    }
+    
+    else {
+        return YES;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,14 +63,27 @@
 }
 
 - (IBAction)northButtonPressed:(UIButton *)sender {
+    
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y+1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)westButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x-1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)southButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y-1);
+    [self updateButtons];
+    [self updateTile];
 }
 
 - (IBAction)eastButtonPressed:(UIButton *)sender {
+    self.currentPoint = CGPointMake(self.currentPoint.x+1, self.currentPoint.y);
+    [self updateButtons];
+    [self updateTile];
 }
 @end

@@ -12,7 +12,7 @@
 
 //iVars
 @property (nonatomic) CGPoint currentPoint;
-@property (nonatomic) NSArray *tiles;
+@property (strong, nonatomic) NSArray *tiles;
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
