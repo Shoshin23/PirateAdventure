@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
 
 @interface ViewController : UIViewController
 
 //iVars
 @property (nonatomic) CGPoint currentPoint;
 @property (strong, nonatomic) NSArray *tiles;
+@property(strong, nonatomic) Character *character;
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;

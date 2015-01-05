@@ -89,4 +89,17 @@
 
 }
 
+-(Character *) character {
+    Character *character = [[Character alloc] init];
+    character.health = 100;
+    Armor *armor = [[Armor alloc] init];
+    armor.name = @"Cloak";
+    armor.health = 5;
+    Weapon *weapon = [[Weapon alloc] init];
+    weapon.name = @"Fist";
+    weapon.damage = 10;
+    character.weapon = weapon;
+    character.armor = armor;
+    return character;
+}
 @end

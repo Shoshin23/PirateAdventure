@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Character.h"
 
 @interface Factory : NSObject
 
 -(NSArray *) tiles;
+-(Character *) character;
 
 @end
