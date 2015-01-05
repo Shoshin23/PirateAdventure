@@ -30,6 +30,7 @@
 		18F452CF1A5B0C6400CCDA31 /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18F452C31A5B0C6400CCDA31 /* PirateWeapons.jpeg */; };
 		18F452D31A5B1CF200CCDA31 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F452D21A5B1CF100CCDA31 /* Weapon.m */; };
 		18F452D61A5B1DD000CCDA31 /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F452D51A5B1DD000CCDA31 /* Armor.m */; };
+		18F452D91A5B1E4900CCDA31 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F452D81A5B1E4900CCDA31 /* Character.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		18F452D21A5B1CF100CCDA31 /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
 		18F452D41A5B1DD000CCDA31 /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
 		18F452D51A5B1DD000CCDA31 /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
+		18F452D71A5B1E4800CCDA31 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		18F452D81A5B1E4900CCDA31 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				18F452D21A5B1CF100CCDA31 /* Weapon.m */,
 				18F452D41A5B1DD000CCDA31 /* Armor.h */,
 				18F452D51A5B1DD000CCDA31 /* Armor.m */,
+				18F452D71A5B1E4800CCDA31 /* Character.h */,
+				18F452D81A5B1E4900CCDA31 /* Character.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				18F452D61A5B1DD000CCDA31 /* Armor.m in Sources */,
 				186D194E1A51A2D600E3E40C /* Factory.m in Sources */,
 				1897A9391A28D46D009B773B /* ViewController.m in Sources */,
+				18F452D91A5B1E4900CCDA31 /* Character.m in Sources */,
 				1897A9361A28D46D009B773B /* AppDelegate.m in Sources */,
 				18F452D31A5B1CF200CCDA31 /* Weapon.m in Sources */,
 				1897A9331A28D46D009B773B /* main.m in Sources */,
